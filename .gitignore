@@ -1,0 +1,8 @@
+node_modules
+.vscode
+.idea
+*.iml
+npm-debug.log
+dist
+/.vscode/launch.json
+.npm-debug.log.swp

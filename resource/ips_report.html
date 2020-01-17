@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client report</title>
+
+  <script src="http://localhost:8080/core.js"></script>
+  <script src="http://localhost:8080/charts.js"></script>
+  <script src="http://localhost:8080/sunburst.js"></script>
+
+  <link rel="stylesheet" href="http://localhost:8080/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="http://localhost:8080/bootstrap/bootstrap-grid.css">
+  <link rel="stylesheet" href="http://localhost:8080/bootstrap/bootstrap-reboot.css">
+  <link rel="stylesheet" href="http://localhost:8080/styles/styles.css">
+
+</head>
+<body>
+<div class="container">
+  <style>
+  #balance {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-top: 30px;
+  }
+</style>
+
+<div class="row">
+  <div class="col">
+    <h1 class="text-center"><b>ДЕКЛАРАЦИЯ ОБ ИНВЕСТИЦИОННОЙ ПОЛИТИКЕ (IPS)</b></h1>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col text-center">
+    <p>Инвестор: <b>Дегтярева Диана Сергеевна_1</b></p>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col">
+    <p>
+      Данную Декларацию Клиента об инвестиционной политике необходимо пересматривать и обновлять по
+      крайней мере раз в год. Обо всех изменениях данного заявления необходимо своевременно сообщать
+      в письменном виде Консультанту для изменения инвестиционной политики<sup>1</sup>.
+    </p>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col">
+    <h2><b>РЕЗЮМЕ: ОСНОВНЫЕ СВЕДЕНИЯ О КЛИЕНТЕ</b></h2>
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <table class="table">
+      <tr>
+        <td>
+          Тип клиента
+        </td>
+        <td>
+          Налогоплательщик, физическое лицо
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Риск-профиль
+        </td>
+        <td>
+          Отсутствует
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Базовая валюта
+        </td>
+        <td>
+          Доллар США (USD)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Рынок базовой валюты
+        </td>
+        <td>
+          США
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Инвестиционный горизонт
+        </td>
+        <td>
+          Свыше 10 лет
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Текущие активы
+        </td>
+        <td>
+          100 000 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Расчетная годовая доходность (номинальная, до налогов и комиссий)
+        </td>
+        <td>
+          3.4%
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Стоимость под риском<sup>2</sup>
+        </td>
+        <td>
+          0.0%
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Потребность в краткосрочной (меньше 1 года) ликвидности
+        </td>
+        <td>
+          20.0% портфеля
+          (20 000
+          USD)
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col">
+    <h2><b>ОБЩИЙ БАЛАНС ПОРТФЕЛЯ (СТРАТЕГИЧЕСКОЕ РАСПРЕДЕЛЕНИЕ)*</b></h2>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col">
+    <div class="row">
+      <div class="col-4">
+        <div id="balance"></div>
+      </div>
+      <div class="col">
+        <table class="table">
+          <tr>
+            <td class="bottom-border">Класс активов</td>
+            <td class="bottom-border">Доля</td>
+            <td class="bottom-border">Доходность</td>
+            <td class="bottom-border">Взвешенная доходность</td>
+          </tr>
+          <tr>
+            <td><b>Акции</b></td>
+            <td><b>0%</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="legend-equity-developed"></div>&nbsp;Развитые рынки
+            </td>
+            <td>
+              <b>0%</b>
+            </td>
+            <td>
+              <b></b>
+            </td>
+            <td>
+              <b></b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="legend-equity-developing"></div>&nbsp;Развивающиеся рынки
+            </td>
+            <td>
+              <b>0%</b>
+            </td>
+            <td>
+              <b></b>
+            </td>
+            <td>
+              <b></b>
+            </td>
+          </tr>
+          <tr>
+            <td class="bottom-border">
+              <div class="legend-equity-frontier"></div>&nbsp;Пограничные рынки
+            </td>
+            <td class="bottom-border">
+              <b>0%</b>
+            </td>
+            <td class="bottom-border">
+              <b></b>
+            </td>
+            <td class="bottom-border">
+              <b></b>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Облигации</b></td>
+            <td><b>80%</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="legend-bond-developed"></div>&nbsp;Развитые рынки
+            </td>
+            <td>
+              <b>76%</b>
+            </td>
+            <td>
+              <b>0.0%</b>
+            </td>
+            <td>
+              <b>0.0%</b>
+            </td>
+          </tr>
+          <tr>
+            <td class="bottom-border">
+              <div class="legend-bond-developing"></div>&nbsp;Развивающиеся рынки
+            </td>
+            <td class="bottom-border">
+              <b>4%</b>
+            </td>
+            <td class="bottom-border">
+              <b>0.0%</b>
+            </td>
+            <td class="bottom-border">
+              <b>0.0%</b>
+            </td>
+          <tr>
+            <td>
+              <div class="legend-cash"></div>&nbsp;<b>Деньги<sup>3</sup></b></td>
+            <td>
+              <b>
+                <b>20%</b>
+              </b>
+            </td>
+            <td>
+              <b>0.0%</b>
+            </td>
+            <td>
+              <b>0.0%</b>
+            </td>
+          </tr>
+          <tr>
+            <td class="bottom-border">
+              <div class="legend-alternative"></div>&nbsp;<b>Альтернативные
+              инвестиции<sup>4</sup></b></td>
+            <td class="bottom-border">
+              <b>
+                0%
+              </b>
+            </td>
+            <td class="bottom-border">
+              <b></b>
+            </td>
+            <td class="bottom-border">
+              <b></b>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3"><b>Ожидаемая номинальная доходность</b></td>
+            <td>3.4%</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-break"></div>
+
+<script>
+  am4core.options.commercialLicense = true;
+
+  // Create chart instance
+  var chart = am4core.create("balance", am4charts.PieChart);
+
+  // Add and configure Series
+  var pieSeries = chart.series.push(new am4charts.PieSeries());
+  pieSeries.dataFields.value = "value";
+  pieSeries.dataFields.category = "name";
+  pieSeries.slices.template.propertyFields.fill = "color";
+  pieSeries.slices.template.stroke = am4core.color("#fff");
+  pieSeries.slices.template.strokeWidth = 2;
+  pieSeries.slices.template.strokeOpacity = 1;
+
+  chart.innerRadius = am4core.percent(50);
+
+  pieSeries.labels.template.disabled = true;
+  pieSeries.ticks.template.disabled = true;
+
+  chart.data =[{"market":"developedEquities","value":0,"color":"#87AFFF"},{"market":"developingEquities","value":0,"color":"#9FBFFF"},{"market":"frontierEquities","value":0,"color":"#ABC7FF"},{"market":"developedBonds","value":0.76000000006,"color":"#6A90EE"},{"market":"developingBonds","value":0.04,"color":"#7C9DED"},{"market":"cash","value":0.2,"color":"#2A324E"},{"market":"alternative","value":0,"color":"#B4C8FC"}];
+
+</script>
+
+  <h1><b>Стратегическое распределение активов</b></h1>
+
+<table class="strategic" style="border: 0">
+  <tr>
+    <td class="col_1 border-bottom">Класс активов</td>
+    <td class="col_2 border-bottom"></td>
+    <td class="col_3 border-bottom">Доля</td>
+    <td class="col_4 border-bottom">Доходность</td>
+    <td class="col_5 border-bottom">Взвешенная доходность</td>
+  </tr>
+  <tr>
+    <td class="col_1d "><b>Акции</b></td>
+    <td class="col_2d "></td>
+    <td class="col_3d border-bottom"><b>0%</b></td>
+    <td class="col_4d border-bottom"></td>
+    <td class="col_5d border-bottom"></td>
+  </tr>
+  <tr>
+    <td class="col_1d"></td>
+    <td class="col_2d">
+      Развитые рынки
+    </td>
+    <td class="col_3d border-bottom">
+      0%
+    </td>
+    <td class="col_4d border-bottom">
+      
+    </td>
+    <td class="col_5d border-bottom">
+      
+    </td>
+  </tr>
+  <tr>
+    <td class="col_1d"></td>
+    <td class="col_2d">
+      Развивающиеся рынки
+    </td>
+    <td class="col_3d border-bottom">
+      0%
+    </td>
+    <td class="col_4d border-bottom">
+      
+    </td>
+    <td class="col_5d border-bottom">
+      
+    </td>
+  </tr>
+  <tr>
+    <td class="col_1d border-bottom"></td>
+    <td class="col_2d border-bottom">
+      Пограничные рынки
+    </td>
+    <td class="col_3d border-bottom">
+      0%
+    </td>
+    <td class="col_4d border-bottom">
+      
+    </td>
+    <td class="col_5d border-bottom">
+      
+    </td>
+  </tr>
+  <tr>
+    <td class="col_1d"><b>Облигации</b></td>
+    <td class="col_2d"></td>
+    <td class="col_3d border-bottom">
+      <b>80%</b>
+    </td>
+    <td class="col_4d border-bottom"></td>
+    <td class="col_5d border-bottom"></td>
+  </tr>
+  <tr>
+    <td class="col_1d"></td>
+    <td class="col_2d">
+      Развитые рынки
+    </td>
+    <td class="col_3d border-bottom">
+      76%
+    </td>
+    <td class="col_4d border-bottom">
+        0.0%
+    </td>
+    <td class="col_5d border-bottom">
+      0.0%
+    </td>
+  </tr>
+  <tr>
+    <td class="col_1d"></td>
+    <td class="col_2d">
+      Развивающиеся рынки
+    </td>
+    <td class="col_3d border-0 border-bottom">
+      4%
+    </td>
+    <td class="col_4d border-0 border-bottom">
+      0.0%
+    </td>
+    <td class="col_5d border-0 border-bottom">
+      0.0%
+    </td>
+  <tr>
+    <td class="col_1d">
+      <b>Деньги<sup>3</sup></b>
+    </td>
+    <td class="col_2d"></td>
+    <td class="col_3d">
+        <b>20%</b>
+    </td>
+    <td class="col_4d">
+      <b>0.0%</b>
+    </td>
+    <td class="col_5d">
+      <b>0.0%</b>
+    </td>
+  </tr>
+  <tr>
+    <td class="col_1d">
+      <b>Альтернативные инвестиции<sup>4</sup></b>
+    </td>
+    <td class="col_2d"></td>
+    <td class="col_3d">
+      <b>
+        0%
+      </b>
+    </td>
+    <td class="col_4d">
+      <b></b>
+    </td>
+    <td class="col_5d">
+      <b></b>
+    </td>
+  </tr>
+  <tr>
+    <td class="col_1d"></td>
+    <td class="col_2d"></td>
+    <td class="col_3d"></td>
+    <td class="col_4d"></td>
+    <td class="col_5d">3.4%</td>
+  </tr>
+</table>
+
+<h1 class="mt-5"><b>Возможные тактические отступления и корректировки</b></h1>
+<table class="table">
+  <tr class="grey">
+    <td>
+      <b>
+        Выбор времени для тактического отхода от стратегического распределения
+      </b>
+    </td>
+    <td>
+      <b>
+        Не допустимо
+      </b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Допустимое отклонение в доле акций
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      В текущий момент рынок оценивается как:
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Увеличить долю акций на:
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr class="grey">
+    <td>
+      <b>
+        Наличие в портфеле альтернативных инвестиций
+      </b>
+    </td>
+    <td>
+      <b>
+        Допустимо
+      </b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      в том числе ценных бумаг с экспозицией на сырьевые товары<sup>5</sup>
+    </td>
+    <td>
+      Допустимо, доля портфеля  0.0%
+    </td>
+  </tr>
+  <tr>
+    <td>
+      в том числе ценных бумаг с экспозицией на недвижимость<sup>6</sup>
+    </td>
+    <td>
+      Допустимо, доля портфеля  0.0%
+    </td>
+  </tr>
+  <tr class="grey">
+    <td>
+      <b>
+        Наличие в портфеле помимо ETF<sup>7</sup>/ETN<sup>8</sup> отдельных акций:
+      </b>
+    </td>
+    <td>
+      <b>
+        Допустимо
+      </b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Лимит на группу
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Лимит на одного эмитента
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+</table>
+<div class="page-break"></div>
+<script>
+  am4core.ready(function () {
+
+    am4core.addClassName = true;
+    am4core.options.commercialLicense = true;
+
+    var chart = am4core.create("chartdiv2_3Page", am4charts.XYChart);
+
+    chart.data = [{
+      "year": 1,
+      "percent10": -0.0062681189235344,
+      "percent50": 0.0162771590344477,
+      "percent90": 0.039333933125883
+
+    }, {
+      "year": 3,
+      "percent10": 0.0031989634970122,
+      "percent50": 0.016277158898306,
+      "percent90": 0.0295258482962
+    }, {
+      "year": 5,
+      "percent10": 0.0061320623807952,
+      "percent50": 0.0162771590343018,
+      "percent90": 0.0265245513897823
+    }, {
+      "year": 10,
+      "percent10": 0.0090929596984817,
+      "percent50": 0.0162771590351392,
+      "percent90": 0.0235125060089043
+    }, {
+      "year": 15,
+      "percent10": 0.0104074695504142,
+      "percent50": 0.0162771590343103,
+      "percent90": 0.0221809468904364
+    }, {
+      "year": 25,
+      "percent10": 0.0117275505674528,
+      "percent50": 0.0162771590260948,
+      "percent90": 0.0208472265050075
+    }];
+
+    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = "year";
+    categoryAxis.renderer.minGridDistance = 50;
+    categoryAxis.renderer.grid.template.disabled = true;
+    categoryAxis.renderer.line.disabled = true;
+
+    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    valueAxis.numberFormatter = new am4core.NumberFormatter();
+    valueAxis.numberFormatter.numberFormat = "#%";
+    valueAxis.renderer.grid.template.stroke = am4core.color("#c5cac5");
+    valueAxis.renderer.baseGrid.stroke = am4core.color("#c5cac5");
+    valueAxis.renderer.line.disabled = true;
+    valueAxis.renderer.grid.template.strokeOpacity = 0.1;
+    valueAxis.renderer.grid.template.strokeWidth = 0.5;
+    valueAxis.renderer.baseGrid.strokeOpacity = 0.1;
+    valueAxis.renderer.baseGrid.strokeWidth = 0.5;
+
+    // Create series
+    var series1 = chart.series.push(new am4charts.LineSeries());
+    series1.strokeWidth = 3;
+    series1.dataFields.valueY = "percent10";
+    series1.dataFields.categoryX = "year";
+    var bullet1 = series1.bullets.push(new am4charts.CircleBullet());
+    bullet1.circle.radius = 3.5;
+    series1.stroke = am4core.color("#ABC7FF");
+    series1.fill = am4core.color("#ABC7FF");
+    series1.name = "Вероятность 10%";
+
+    var series2 = chart.series.push(new am4charts.LineSeries());
+    series2.strokeWidth = 3;
+    series2.dataFields.valueY = "percent50";
+    series2.dataFields.categoryX = "year";
+    var bullet2 = series2.bullets.push(new am4charts.CircleBullet());
+    bullet2.circle.radius = 3.5;
+    series2.stroke = am4core.color("#2A324E");
+    series2.fill = am4core.color("#2A324E");
+    series2.name = "Вероятность 50%";
+
+    var series3 = chart.series.push(new am4charts.LineSeries());
+    series3.strokeWidth = 3;
+    series3.dataFields.valueY = "percent90";
+    series3.dataFields.categoryX = "year";
+    var bullet3 = series3.bullets.push(new am4charts.CircleBullet());
+    bullet3.circle.radius = 3.5;
+    series3.stroke = am4core.color("#6A90EE");
+    series3.fill = am4core.color("#6A90EE");
+    series3.name = "Вероятность 90%";
+
+    chart.cursor = new am4charts.XYCursor();
+    chart.legend = new am4charts.Legend();
+    chart.legend.position = "right";
+
+  });
+</script>
+  <h1><b>РАСПРЕДЕЛЕНИЕ АКТИВОВ С УЧЕТОМ ТАКТИЧЕСКИХ ОТСТУПЛЕНИЙ</b></h1>
+<table class="table-center">
+  <thead>
+  <tr>
+    <th>Класс активов</th>
+    <th>Географическая локализация</th>
+    <th>Охват инструментов</th>
+    <th>Нижний предел</th>
+    <th>Целевая доля портфеля</th>
+    <th>Верхний предел</th>
+    <th>Сумма вложений в базовой валюте</th>
+  </tr>
+  </thead>
+  <tbody>
+        <tr>
+            <td class="vertical-center" rowspan=6 >
+              Облигации
+            </td>
+            <td class="vertical-center" rowspan=4>
+              US
+            </td>
+          <td><span>Investment-Grade Broad</span></td>
+          <td><span>39.0%</span></td>
+          <td><span><b>44.0%</b></span></td>
+          <td><span>49.0%</span></td>
+          <td><span><b>44 000</b></span></td>
+        </tr>
+        <tr>
+          <td><span>Investment-grade Corporate</span></td>
+          <td><span>4.7%</span></td>
+          <td><span><b>9.7%</b></span></td>
+          <td><span>14.7%</span></td>
+          <td><span><b>9 700</b></span></td>
+        </tr>
+        <tr>
+          <td><span>High-Yield</span></td>
+          <td><span>0.0%</span></td>
+          <td><span><b>3.2%</b></span></td>
+          <td><span>8.2%</span></td>
+          <td><span><b>3 200</b></span></td>
+        </tr>
+        <tr>
+          <td><span>Inflation-Indexed</span></td>
+          <td><span>0.0%</span></td>
+          <td><span><b>3.0%</b></span></td>
+          <td><span>8.0%</span></td>
+          <td><span><b>3 000</b></span></td>
+        </tr>
+        <tr>
+            <td class="vertical-center" rowspan=1>
+              Non-US
+            </td>
+          <td><span>Developed markets USD-Hedged</span></td>
+          <td><span>11.0%</span></td>
+          <td><span><b>16.0%</b></span></td>
+          <td><span>21.0%</span></td>
+          <td><span><b>16 000</b></span></td>
+        </tr>
+        <tr>
+            <td class="vertical-center" rowspan=1>
+              Emerging Markets
+            </td>
+          <td><span>Emerging markets Local currency</span></td>
+          <td><span>0.0%</span></td>
+          <td><span><b>4.0%</b></span></td>
+          <td><span>9.0%</span></td>
+          <td><span><b>4 000</b></span></td>
+        </tr>
+        <tr>
+            <td class="vertical-center" rowspan=1 >
+              Деньги
+            </td>
+            <td class="vertical-center" rowspan=1>
+              US
+            </td>
+          <td><span>Cash equivalents - US</span></td>
+          <td><span>15.0%</span></td>
+          <td><span><b>20.0%</b></span></td>
+          <td><span>25.0%</span></td>
+          <td><span><b>20 000</b></span></td>
+        </tr>
+  </tbody>
+</table>
+<div class="page-break"></div>
+  <style>
+  #tacticalAllocation {
+    width: 800px;
+    height: 800px;
+  }
+</style>
+
+<br>
+<div class="sunburst-container">
+  <div class="legend-inline" id="tacticalAllocation"></div>
+  <div class="legend-container">
+    <div class="legend-content">
+      <ul class="legend-inline legend-list">
+        <li class="legend-element">
+          <div class="legend-size legend-color-equity"></div>
+          <span>Акции</span>
+          <span
+              class="legend-navigate-right">0%</span>
+        </li>
+        <li class="legend-element">
+          <div class="legend-size legend-color-bond"></div>
+          <span>Облигации</span>
+          <span
+              class="legend-navigate-right">80%</span>
+        </li>
+        <li class="legend-element">
+          <div class="legend-size legend-color-currency"></div>
+          <span>Деньги</span>
+          <span
+              class="legend-navigate-right">20%</span>
+        </li>
+        <li class="legend-element">
+          <div class="legend-size legend-color-alternative"></div>
+          <span>Альтерн. инв.</span>
+          <span
+              class="">0%</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<script>
+  // Apply chart themes
+  am4core.options.commercialLicense = true;
+
+  var chart = am4core.createFromConfig(
+      {
+        listeners: [{
+          event: 'init', method: function (event) {
+            console.log(event)
+          }
+        }]
+      },
+      "tacticalAllocation",
+      am4plugins_sunburst.Sunburst
+  );
+  chart.padding(0, 0, 0, 0);
+  chart.radius = am4core.percent(100);
+
+  chart.data = [{"number":2,"market":"bond","name":"US","value":null,"color":"#6A90EE","children":[{"name":"High-Yield","value":0.03243243246,"color":"#7C9DED"},{"name":"Inflation-Indexed","value":0.03,"color":"#7C9DED"},{"name":"Investment-grade Corporate","value":0.09729729732,"color":"#7C9DED"},{"name":"Investment-Grade Broad","value":0.44027027028,"color":"#7C9DED"}]},{"number":2,"market":"bond","name":"Non-US","value":null,"color":"#6A90EE","children":[{"name":"Developed markets USD-Hedged","value":0.16,"color":"#7C9DED"}]},{"number":2,"market":"bond","name":"Emerging Markets","value":null,"color":"#6A90EE","children":[{"name":"Emerging markets Local currency","value":0.04,"color":"#7C9DED"}]},{"number":3,"market":"currency","name":"US","value":null,"color":"#2A324E","children":[{"name":"Cash equivalents - US","value":0.2,"color":"#495371"}]}];
+
+  chart.colors.step = 1;
+  chart.innerRadius = am4core.percent(35);
+  chart.fontSize = 14;
+
+  chart.dataFields.value = "value";
+  chart.dataFields.name = "name";
+  chart.dataFields.children = "children";
+  chart.dataFields.color = "color";
+
+  var level0SeriesTemplate = new am4plugins_sunburst.SunburstSeries();
+  level0SeriesTemplate.hiddenInLegend = false;
+  chart.seriesTemplates.setKey("0", level0SeriesTemplate);
+  level0SeriesTemplate.labels.template.disabled = false;
+  level0SeriesTemplate.labels.template.maxWidth = 150;
+  level0SeriesTemplate.labels.template.truncate = true;
+  level0SeriesTemplate.labels.template.paddingLeft = am4core.percent(20);
+  level0SeriesTemplate.labels.template.paddingRight = am4core.percent(20);
+  level0SeriesTemplate.labels.template.paddingTop = am4core.percent(20);
+  level0SeriesTemplate.labels.template.paddingBottom = am4core.percent(20);
+
+  level0SeriesTemplate.labels.template.adapter.add("text", function (label, target, key) {
+    return target.dataItem.properties.category;
+  });
+
+  level0SeriesTemplate.labels.template.adapter.add("rotation", function (rotation, target) {
+    target.maxWidth = target.dataItem.slice.radius - target.dataItem.slice.innerRadius - 10;
+    target.maxHeight = Math.abs(target.dataItem.slice.arc * (target.dataItem.slice.innerRadius
+        + target.dataItem.slice.radius) / 2 * am4core.math.RADIANS);
+
+    return rotation;
+  });
+
+  var level1SeriesTemplate = level0SeriesTemplate.clone();
+  chart.seriesTemplates.setKey("1", level1SeriesTemplate);
+  level1SeriesTemplate.fillOpacity = 0.75;
+
+  var level2SeriesTemplate = level0SeriesTemplate.clone();
+  chart.seriesTemplates.setKey("2", level2SeriesTemplate);
+  level2SeriesTemplate.fillOpacity = 0.5;
+
+</script>
+
+  <h2 class="section_title">СВЕДЕНИЯ ОБЩЕГО ХАРАКТЕРА И ЦЕЛИ</h2>
+<p class="mt-4">Данная Декларация об инвестиционной политике разработана для
+  инвестора Дегтярева Диана Сергеевна_1
+  (далее «Клиент»), налогоплательщика. Рыночная стоимость учтенных в Декларации активов в настоящее
+  время составляет
+  приблизительно
+  100 000 Долларов США
+</p>
+<p>Декларация создана помочь Клиенту и Консультанту во взаимодействии с целью эффективного
+  инвестирования,
+  отслеживания и оценки процесса управления Клиентом своими активами. Инвестиционная программа
+  Клиента
+  определяется в различных разделах Декларации посредством:</p>
+<ul>
+  <li>письменного обоснования позиций, ожиданий Клиента, задач и направлений процесса управления
+    Клиентом своими активами;
+  </li>
+  <li>определения инвестиционной стратегии для управления активами Клиентом. Эта стратегия
+    направлена на
+    диверсификацию портфеля Клиента с использованием различных классов активов и стилей управления
+    инвестициями<span class="index">10</span> в соответствии с определенными стратегическими
+    задачами
+    распределения активов и допустимой минимальной/максимальной долей каждого инвестиционного
+    инструмента. При планировании стратегии учитывались временной горизонт инвестиций, устойчивость
+    к волатильности, налоговый статус и инвестиционные цели Клиента;
+  </li>
+  <li>стимулирования эффективного взаимодействия между Клиентом и Консультантом.</li>
+</ul>
+<p class="mt-2">Декларация об инвестиционной политике описывает разумный процесс инвестиционный
+  деятельности,
+  который
+  Клиент и Консультант считают приемлемым для Клиента. Клиент желает получить максимально возможный
+  доход в
+  разумных пределах волатильности и выполнить следующие финансовые цели и инвестиционные задачи:</p>
+<p class="bold mt-4">Финансовые цели по оценке Клиента</p>
+<table class="table mt-4">
+  <tr>
+    <td class="bottom-border">Цель<span class="index">**</span></td>
+    <td class="bottom-border">Сумма</td>
+    <td class="bottom-border">Вероятность исполнения</td>
+  </tr>
+    <tr>
+      <td><span class="bold">Автомобиль</span><br>
+        Май 2025<br>
+        Приоритет – Критическая</td>
+      <td>
+        200 000 USD 
+      </td>
+      <td class="red"> Низкая
+        <br> 0.0%
+      </td>
+    </tr>
+    <tr>
+      <td><span class="bold">Дом</span><br>
+        Ноябрь 2030<br>
+        Приоритет – Критическая</td>
+      <td>
+        1 000 000 USD 
+      </td>
+      <td class="red"> Низкая
+        <br> 0.0%
+      </td>
+    </tr>
+    <tr>
+      <td><span class="bold">Пенсия</span><br>
+        Октябрь 2035 - Ноябрь 2050<br>
+        Приоритет – Инвестиционная</td>
+      <td>
+        10 000 USD ежемесячно
+      </td>
+      <td class="red"> Низкая
+        <br> 0.0%
+      </td>
+    </tr>
+</table>
+<p><span class="index">**</span>Названия финансовых целей определяются Клиентом.</p>
+<p class="mt-4"><span class="bold">Инвестиционная задача:</span>
+    Невысокая, но стабильная доходность при низкой волатильности портфеля. Принимая во внимание
+    текущие активы и ожидаемую потребность в денежных средствах, Клиент планирует разместить
+    80%
+    активов в инструментах, генерирующих процентный доход и готов принять невысокую доходность
+    с целью минимизации рисков волатильности.
+</p>
+<p class="mt-3">Для реализации поставленных целей и задач Клиент предполагает следующие пополнения
+  портфеля свыше
+  текущей
+  оценочной стоимости активов:</p>
+<p class="bold mt-5">Ожидаемые пополнения</p>
+  <table class="table mt-4">
+    <thead>
+    <tr>
+      <th class="bottom-border">Период</th>
+      <th class="bottom-border">Сумма</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Октябрь 2019 - Ноябрь 2060</td>
+        <td>
+          10 000 USD ежемесячно
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<p class="end_section"></p>
+
+<h2 class="section_title mt-3">ЗАЯВЛЕНИЕ ОБ ИНВЕСТИЦИОННЫХ ПАРАМЕТРАХ<span class="index">*</span></h2>
+<p class="bold mt-3">Устойчивость к волатильности</p>
+<p>Клиент понимает и допускает обязательное наличие волатильности портфеля ценных бумаг и существование рисков
+  и нестабильности, связанных с инвестиционными рынками.</p>
+<p>При определении инвестиционных задач учитывалась устойчивость Клиента к краткосрочной и среднесрочной
+  волатильности портфеля. Текущее финансовое состояние Клиента, его прогнозируемые изменения в будущем, а также
+  другие факторы допускают временные колебания рыночной стоимости портфеля при решении поставленных
+  инвестиционных задач.</p>
+<p>Консультант по управлению капиталом объяснил Клиенту различия между краткосрочной и долгосрочной
+  волатильностью стоимости активов портфеля, а также свойства, проистекающие из пассивного характера выбранной
+  инвестиционной стратегии.</p>
+<p class="bold mt-3">Предпочтительные классы активов</p>
+<p>Консультант и Клиент считают, что эффективность инвестиционной деятельности определяется, прежде всего,
+  распределением активов портфеля. Клиент рассмотрел показатели долгосрочной эффективности различных классов
+  активов, чтобы определить, какие виды рисков существуют в инвестиционной деятельности и какое вознаграждение
+  связано с каждым из этих рисков.<span class="index">*</span></p>
+<p>Исторически преимуществом инвестиций, генерирующих процентный доход (облигации), была относительно
+  стабильная номинальная стоимость. Однако, из-за высокой чувствительности к инфляции возможность с их помощью
+  действительно увеличить капитал в долгосрочной перспективе довольно мала. С другой стороны, ожидаемая
+  доходность долевых инвестиционных инструментов (акции) значительно выше, но и волатильность (риск изменения)
+  их номинальной стоимости очень высока. С точки зрения процесса принятия решений относительно инвестиционной
+  деятельности такая волатильность вполне оправдана, но только если временной горизонт достаточно большой. Чем
+  больше инвестиционный горизонт, тем выше вероятность, что эффективность акций будет выше эффективности
+  инвестиций, генерирующих процентный доход.<span class="index">*</span></p>
+<p>Клиент и Консультант пришли к выводу, что Клиент будет применять диверсификацию с использованием различных
+  классов активов как основной способ, чтобы смягчить риски, связанные с выполнением инвестиционных задач.</p>
+<p class="mt-3">Клиентом были выбраны следующие классы активов:</p>
+<ul>
+    <li>Fixed Income - US Investment-Grade Broad (Фонды облигаций с инвестиционным рейтингом, выпущенных в США))</li>
+    <li>Fixed Income - US Investment-grade Corporate (Фонды облигаций корпоративных эмитентов с инвестиционным рейтингом, выпущенных в США))</li>
+    <li>Fixed Income - US High-Yield (Фонды облигаций корпоративных эмитентов с повышенной доходностью, выпущенных в США))</li>
+    <li>Fixed Income - US Inflation-Indexed (Фонды индексируемых по инфляции облигаций, выпущенных в США))</li>
+    <li>Fixed Income - Developed markets USD-Hedged (Фонды облигаций, выпущенных в Развитых странах, с защитой от валютной переоценки))</li>
+    <li>Fixed Income - Emerging markets Local currency (Фонды облигаций, выпущенных в Развивающихся странах))</li>
+    <li>Cash equivalents - US (Фонды ультракоротких облигаций, номинированных в долларах США))</li>
+</ul>
+<p class="bold mt-3">Инвестиционный горизонт</p>
+<p>
+    Более 10 лет: на данном горизонте ключевыми рисками, мешающими достижению целей, являются риски инфляции.
+    На таком горизонте можно пренебречь краткосрочной волатильностью, поскольку, как видно из Графика 1,
+    на горизонте 10 лет и более среднегодовая доходность с высокой вероятностью приближается к ожидаемой.
+    Для снижения данных рисков в портфеле сокращена доля фиксированных инструментов и увеличены вложения в
+    долевые инструменты.
+</p>
+<p class="bold mt-3">Требования краткосрочной ликвидности</p>
+<p>Не менее 20.0% портфеля в инструментах, позволяющих изъять из портфеля средства в короткий срок без существенной
+  потери в стоимости.</p>
+<p>Под краткосрочной ликвидностью понимается доля портфеля, которую Клиент планирует изъять из портфеля в
+  течение ближайшего года вне зависимости от рыночной ситуации .</p>
+<p class="bold mt-3">Изменение баланса стратегического распределения активов</p>
+<ul>
+    <li>Клиент считает не допустимыми тактические отступления и корректировки от стратегической аллокации.</li>
+    <li>Клиент считает необходимым диверсифицировать свой портфель с помощью вложений в альтернативные
+      инвестиционные инструменты.
+      В частности, доля вложений в фонды недвижимости должна составить порядка
+        
+        от общей стоимости активов в портфеле;
+        доля вложений в инструменты товарного рынка должна составить порядка
+      
+        от общей стоимости активов в портфеле.
+       </li>
+      <li>
+        Клиент также считает допустимым включить в портфель отдельные инструменты.
+        Совокупная доля таких инструментов в портфеле не может превышать
+        0%.
+        Доля ценных бумаг одного эмитента не должна превышать
+        0%.
+      </li>
+</ul>
+<p class="end_section"></p>
+
+  <h1 class="section_title">ПРОЦЕДУРЫ КОНТРОЛЯ</h1>
+<p class="bold">Ребалансировка</p>
+<p>Клиент планирует пересматривать совместно с Консультантом процентную долю каждого класса активов и стилей
+  управления инвестициями в соответствии с заданной периодичностью и допустимым отклонением. Поступления и
+  выплаты денежных средств будут производиться в соответствии со стратегическим распределением активов. Если
+  денежного потока нет либо он не настолько существенен, чтобы соответствовать установленному распределению
+  активов, Консультант может согласовать с Клиентом, какие операции необходимо провести для восстановления
+  необходимого баланса активов.</p>
+<p>Тип ребалансировки: смешанная</p>
+<ul>
+  <li>Частота календарной ребалансировки: раз в квартал</li>
+  <li>Границы предельного отклонения: до 5% портфеля/25% начальной аллокации.</li>
+</ul>
+<p class="bold">Измерение издержек</p>
+<p>Компания будет предоставлять Клиенту отчет, содержащий, в том числе, информацию об издержках, связанных с
+  инвестиционной деятельностью. В отчете будут отражены среди прочего:</p>
+<ul>
+  <li>расходы на инвестиционную деятельность;</li>
+  <li>комиссионные кастодиана.</li>
+</ul>
+<p>Ознакомиться с тарифами на услуги можно на сайте компании:
+  <a href="https://broker.ru/regulations">https://broker.ru/regulations</a> (приложение 11)
+</p>
+<p class="bold">Ежегодный пересмотр</p>
+<p>Клиент будет пересматривать данную Декларацию об инвестиционной политике не менее одного раза в год на
+  предмет сохранения релевантности поставленных инвестиционных задач. Считается, что Декларация об
+  инвестиционной политике не будет подвергаться частым изменениям. В частности, краткосрочные изменения на
+  финансовых рынках и тактические решения в пределах оговоренных лимитов не требуют корректировки Декларации.</p>
+<p class="end_section"></p>
+<h1 class="section_title">ОПИСАНИЕ РИСКОВ</h1>
+<p>Здесь перечислены только некоторые ключевые риски. Полный перечень рисков указан в регламенте оказания услуг
+  на рынке ценных бумаг, который доступен по ссылке
+  <a href="https://broker.ru/regulations">https://broker.ru/regulations.</a>
+</p>
+<p>В общем смысле риск представляет собой возможность возникновения убытков при осуществлении финансовых
+  операций в связи с возможным неблагоприятным влиянием разного рода факторов. Ниже приведено описание
+  основных рисков, с которыми будут связаны операции на рынке ценных бумаг.</p>
+<ol type="I">
+  <li class="bold">Системный риск</li>
+  <p>Отражает социально-политические и экономические условия развития Российской Федерации и других стран и не
+    связан с конкретным инструментом финансового рынка. К основным системным рискам относятся: политический
+    риск, риск неблагоприятных (с точки зрения условий осуществления бизнеса) изменений в законодательстве,
+    макроэкономические риски (резкая девальвация национальной валюты, кризис рынка государственных долговых
+    обязательств, банковский кризис, валютный кризис и др.). К системным рискам относятся также риски возникновения
+    обстоятельств непреодолимой силы. Этот риск затрагивает несколько финансовых институтов и проявляется в
+    снижении их способности выполнять свои функции. В силу большой степени взаимодействия и взаимозависимости
+    финансовых институтов между собой, оценка системного риска сложна, но его реализация может повлиять на всех
+    участников финансового рынка.</p>
+  <li class="bold">Рыночный риск</li>
+  <p>Этот риск проявляется в неблагоприятном изменении цен (стоимости) принадлежащих Клиенту финансовых
+    инструментов, в том числе из-за неблагоприятного изменения политической ситуации, резкой девальвации
+    9национальной валюты, кризиса рынка государственных долговых обязательств, банковского и валютного кризиса,
+    обстоятельств непреодолимой силы, главным образом стихийного и военного характера, и как следствие, приводит к
+    снижению доходности или даже убыткам. В зависимости от выбранной стратегии рыночный (ценовой) риск будет
+    состоять в увеличении (уменьшении) цены финансовых инструментов. Клиенту следует отдавать себе отчет в том, что
+    стоимость принадлежащих Клиенту финансовых инструментов может как расти, так и снижаться, и ее рост в прошлом
+    не означает ее роста в будущем.</p>
+  <p>Следует специально обратить внимание на следующие рыночные риски:</p>
+  <ol type="1">
+    <li class="bold">Валютный риск</li>
+    <p>Валютный риск проявляется в неблагоприятном изменении курса базовой валюты по отношению к иностранной
+      валюте, при котором доходы Клиента от владения финансовыми инструментами могут быть подвергнуты
+      инфляционному воздействию (снижению реальной покупательной способности), вследствие чего Клиент может
+      потерять часть дохода, а также понести убытки. Валютный риск также может привести к изменению размера
+      обязательств по финансовым инструментам, связанным с иностранной валютой или иностранными финансовыми
+      инструментами, что может привести к убыткам или к затруднению возможности рассчитываться по ним.</p>
+    <li class="bold">Процентный риск</li>
+    <p>Проявляется в неблагоприятном изменении процентной ставки, влияющей на курсовую стоимость облигаций с
+      фиксированным доходом. Процентный риск может быть обусловлен несовпадением сроков востребования
+      (погашения) требований и обязательств, а также неодинаковой степенью изменения процентных ставок по
+      требованиям и обязательствам.</p>
+    <li class="bold">Ценовой риск</li>
+    <p>Ценовой риск проявляется в неожиданном изменении цен на финансовые инструменты, что может привести к
+    падению стоимости портфеля Клиента и, как следствие, снижению доходности и даже прямым убыткам. Ценовой
+    риск отдельных инструментов может оказывать косвенное влияние на изменение стоимости других
+    инструментов. Так, существенное изменение цены акции, входящей в индекс, окажет влияние на стоимость
+    индекса в целом и на цену биржевого фонда, привязанного к индексу. Ценовой риск на товарных рынках также
+      влияет на инструменты, привязанные к цене сырьевых товаров.</p>
+    <li class="bold">Риск банкротства эмитента акций</li>
+    <p>Связан с возможностью наступления неплатежеспособности эмитента ценной бумаги, что приведет к резкому
+    падению цены на такую ценную бумагу (в случае с акциями) или невозможностью погасить ее (в случае с
+      долговыми ценными бумагами).</p>
+  </ol>
+  <li class="bold">Риск ликвидности</li>
+  <p>Этот риск проявляется в снижении возможности реализовать финансовые инструменты по необходимой цене из-за
+    снижения спроса на них. Данный риск может проявиться, в частности, при необходимости быстрой продажи
+    финансовых инструментов, в убытках, связанных со значительным снижением их стоимости.</p>
+  <li class="bold">Кредитный риск</li>
+  <p>Этот риск заключается в возможности невыполнения контрактных и иных обязательств, принятых на себя другими
+    лицами в связи с Вашими операциями.</p>
+  <p>К числу кредитных рисков относятся следующие риски:</p>
+  <ol type="1">
+    <li class="bold">Риск дефолта по облигациям и иным долговым ценным бумагам</li>
+    <p>Заключается в возможности неплатежеспособности эмитента долговых ценных бумаг, что приведет к
+      невозможности или снижению вероятности погасить ее в срок и в полном объеме.</p>
+  </ol>
+  <li class="bold">Правовой риск</li>
+  <p>Правовой риск - системный риск, связанный с возможностью возникновения потерь вследствие изменения
+    законодательства или принятия, изменения, утраты силы нормативных актов, стандартов саморегулируемых
+    организаций, регулирующих рынок ценных бумаг, финансовый рынок или иные отрасли экономики, которые могут
+    привести к негативным для Клиента последствиям. К правовому риску также относится возможность изменения
+    правил расчета налога, налоговых ставок, отмены налоговых вычетов и другие изменения налогового
+    законодательства, которые могут привести к негативным для Клиента последствиям.</p>
+</ol>
+<p class="end_section"></p>
+<ol class="note">
+  <li class="note">Услуги Консультанта не являются услугами по доверительному управлению ценными бумагами и средствами
+    инвестирования в них. Инвестиционные решения Клиент принимает самостоятельно.</li>
+  <li class="note">С высокой вероятностью (95%) за год стоимость портфеля снизится не более чем на эту величину.</li>
+  <li class="note">Термин обозначает широкий класс активов, включающий наличные деньги и краткосрочные ликвидные долговые
+    инструменты (облигации, ноты, векселя).</li>
+  <li class="note">Термин обозначает широкий класс активов. Фактические инвестиции осуществляются с использованием торгуемых
+    ценных бумаг (акции, облигации, биржевые фонды, биржевые ноты), привязанных к ценам на соответствующих
+    рынках.</li>
+  <li class="note">Инвестиции могут осуществляться в ценные бумаги, привязанные к цене драгоценных металлов, контрактов на
+    рынках металлов, энергетических товаров, товаров сельскохозяйственного назначения.</li>
+  <li class="note">Инвестиции могут осуществляться в ценные бумаги инвестиционных фондов недвижимости (которые напрямую
+    инвестируют в объекты недвижимости) или в ценные бумаги, привязанные к ценам на рынках недвижимости.</li>
+  <li class="note">ETF – биржевой фонд или торгуемый на бирже фонд (англ. Exchange-Traded Fund – ETF) – это инвестиционный фонд,
+    паи (акции) которого торгуются на бирже. В отличие от традиционных ПИФов или взаимных фондов (mutual funds)
+    компания, запустившая тот или иной ETF, не работает напрямую с розничными инвесторами. Размещение паев фонда
+    происходит так же, как акций обычных компаний – на бирже. Там же они и обращаются, т. е. инвесторы в ходе торгов
+    могут купить и продать паи такого фонда по текущей биржевой цене. Это принципиальное отличие биржевых фондов
+    от обычных, паи которых не допущены к торгам и в которых ввод и вывод денег (покупка и продажа паев) может
+    занимать несколько дней.</li>
+  <li class="note">ETN – биржевые ноты (англ. Exchange Traded Notes – ETNs) – это необеспеченные (незастрахованные) иностранные
+    долговые обязательства без каких-либо защит, стоимость которых привязана к цене некоего актива, обычно корзины
+    из акций, облигаций или товарных фьючерсов за вычетом соответствующих сборов. Предназначены для
+    квалифицированных инвесторов.</li>
+  <li class="note">Детальное описание инструментов приведено в разделе “Предпочтительные классы активов”.</li>
+  <li class="note">Инвестиционный стиль объединяет однородные активы, связанные одинаковыми характеристиками. Типичными
+    характеристиками является ориентация фондов акций на рост или на стоимость, капитализация, группа кредитного
+    рейтинга облигаций</li>
+</ol>
+<p class="end_section"></p>
+<p><span class="index">*</span>
+  ОБРАЩАЕМ ВАШЕ ВНИМАНИЕ: Настоящий материал и указанная в нем информация не являются индивидуальными
+  инвестиционными рекомендациями. Финансовые инструменты либо операции, упомянутые в нем, могут не
+  подходить Вам, не соответствовать Вашему инвестиционному профилю, финансовому положению, опыту инвестиций,
+  знаниям, инвестиционным целям, отношению к риску и доходности. Определение соответствия финансового
+  инструмента либо операции инвестиционным целям, инвестиционному горизонту и толерантности к риску является
+  задачей Инвестора. Настоящий материал содержит информацию касательно услуг ООО «Компания БКС». Информация
+  является конфиденциальной и предназначена исключительно для внимания лиц, которым она адресована.
+  Дальнейшее распространение этой информации допускается только с предварительного согласия ООО «Компания
+  БКС». Информация носит лишь ориентировочный характер, не является исчерпывающей и предоставляется
+  исключительно для целей обсуждения. Информация не должна расцениваться как публичная оферта, просьба или
+  приглашение приобрести или продать какие-либо ценные бумаги, финансовые инструменты или услуги. ООО
+  «Компания БКС» оставляет за собой право принимать окончательное решение о предоставлении данных продуктов и /
+  или услуг конкретному Клиенту, в том числе отказывать в предоставлении продуктов и / или услуг в случае, если такая
+  деятельность будет противоречить применимому законодательству. Никаких гарантий в прямой или косвенной
+  форме, в том числе обусловленных законодательством, в связи с указанными сведениями и материалами не
+  предоставляется. Изложенная выше информация не может рассматриваться в качестве рекомендации к
+  инвестированию средств, а также в качестве гарантий или обещаний в будущем доходности вложений, уровня риска,
+  размера убытков и издержек, безубыточности инвестиций. Результат инвестирования в прошлом не определяет
+  дохода в будущем. Прежде чем воспользоваться какой-либо услугой ООО «Компания БКС», Инвестору следует
+  обсудить с уполномоченными представителями ООО «Компания БКС» условия и порядок предоставления каждой
+  конкретной услуги. Инвестор несет расходы на оплату брокерских и депозитарных услуг и иных услуг, на оплату
+  подачи поручений по телефону, иные расходы, подлежащие оплате Клиентом. Полный список тарифов ООО
+  «Компания БКС» приведен в приложении No11 к Регламенту оказания услуг на рынке ценных бумаг ООО «Компания
+  БКС» https://broker.ru/regulations. Перед совершением сделок Инвестору необходимо ознакомиться с рисками,
+  связанными с осуществлением операций на рынке ценных бумаг, в том числе связанными с
+  совершением сделок с неполным покрытием, возникновением непокрытых позиций, временно непокрытых позиций;
+  с проведением операций на рынке фьючерсных контрактов, форвардных контрактов и опционов; с приобретением
+  иностранных ценных бумаг. Перед принятием инвестиционного решения, прежде чем воспользоваться какой-либо
+  услугой БКС, Инвестору необходимо самостоятельно оценить экономические риски и выгоды, налоговые,
+  юридические, бухгалтерские последствия заключения сделки, свою готовность и возможность принять такие риски.
+  Риск наступления негативных последствий в результате использования представленных выше оценок, мнений и
+  утверждений, в полном объеме несет Инвестор (адресат информации). ООО «Компания БКС» не несет ответственности
+  за какие-либо убытки (прямые или косвенные), возникшие в результате использования вышеизложенных сведений и
+  материалов, совершения упомянутых операций либо инвестирования в упомянутые финансовые инструменты. За
+  дополнительной информацией по вопросам предоставления продуктов и услуг компаний БКС обращайтесь,
+  пожалуйста, к уполномоченным сотрудникам ООО «Компания БКС».
+</p>
+<p>Не является рекламой ценных бумаг и финансовых инструментов.</p>
+<p>Указанная в материале ожидаемая доходность, волатильность и риск портфеля являются модельными и основаны на
+  прогнозных оценках доходностей, уровней волатильности и корреляций между различными классами активов и
+  инвестиционными стилями. Таким образом, указанные модельные значения не могут предсказать динамику
+  стоимости портфеля в условиях изменчивых рыночных факторов. Стратегия консультирования может разрабатываться
+  с использованием различных инвестиционных инструментов (биржевые фонды и отдельно взятые ценные бумаги),
+  которые соответствуют различным классам активов и инвестиционным стилям. Инвестиции не могут осуществляться
+  напрямую в индексы, поэтому несут в себе дополнительные комиссии и издержки. Моделируемые доходности
+  приведены в материале до вычета налогов и комиссий. Доходность активов в прошлом не является гарантией
+  будущих результатов. Не является обещанием, гарантией размера и стабильности риска, доходности, издержек,
+  безопасности и эффективности инвестиций и отсутствия убытков.</p>
+<p>Все оценки выполнены исходя из предположения, что начальная аллокация активов жестко зафиксирована и не
+  меняется на протяжении горизонта инвестирования (за исключением случаев регулярной ребалансировки). Т.е.
+  оценки в материале не учитывают эффект от возможных тактических отступлений и корректировок, которые могут как
+  повысить, так и понизить указанные в материале показатели, включая ожидаемую доходность.</p>
+<p>ООО «Компания БКС»: Лицензия ФСФР No154-04434-100000 от 10.01.2001 на осуществление брокерской деятельности.</p>
+<p class="end_section"></p>
+</div>
+</body>
+</html>
