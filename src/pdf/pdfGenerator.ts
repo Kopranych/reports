@@ -10,7 +10,6 @@ export const printPdf = async () => {
  </body>`);
   await page.emulateMedia('print');
   const pdf = await page.pdf({
-    path: './pdf/test.pdf',
     format: 'A4',
     printBackground: true,
     displayHeaderFooter: true,

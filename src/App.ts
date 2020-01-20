@@ -1,6 +1,5 @@
 import * as express from 'express'
 import {printPdf} from "./pdf/pdfGenerator";
-import * as fs from "fs";
 
 class App {
   public express;
@@ -17,11 +16,12 @@ class App {
         message: 'Hello World!'
       })
     });
-    fs.readFile(__dirname + filePath , function (err,data){
-      res.contentType("application/pdf");
-      res.send(data);
+    router.get('/generate', (req, res) => {
+      printPdf().then(pdf => {
+        res.set({'Content-Type': 'application/pdf', 'Content-Length': pdf.length});
+        res.send(pdf);
+      });
     });
-
     this.express.use('/', router)
   }
 }
