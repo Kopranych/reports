@@ -1,11 +1,12 @@
-import * as express from 'express'
 import {printPdf} from "./pdf/pdfGenerator";
+const express = require('express');
+const bodyParser = require('body-parser');
 
 class App {
-  public express;
+  public app;
 
   constructor() {
-    this.express = express();
+    this.app = express();
     this.mountRoutes()
   }
 
@@ -16,14 +17,19 @@ class App {
         message: 'Hello World!'
       })
     });
-    router.get('/generate', (req, res) => {
-      printPdf().then(pdf => {
-        res.set({'Content-Type': 'application/pdf', 'Content-Length': pdf.length});
+    router.post('/generate', (req, res) => {
+      printPdf(req.body.html).then(pdf => {
+        res.setHeader('Content-Length', pdf.length);
+        res.setHeader('Content-Type', 'application/pdf');
+        res.setHeader('Content-Disposition', 'attachment; filename=my_file.pdf');
         res.send(pdf);
       });
     });
-    this.express.use('/', router)
+
+    this.app.use(bodyParser.urlencoded({ extended: false }));
+    this.app.use(bodyParser.json());
+    this.app.use('/', router);
   }
 }
 
-export default new App().express
+export default new App().app

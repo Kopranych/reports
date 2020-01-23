@@ -1,13 +1,9 @@
 const puppeteer = require('puppeteer');
-// const pagePath = 'file://' + __dirname + '/resource/ips_report.html';
 
-export const printPdf = async () => {
+export const printPdf = async (html: string) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  // await page.goto(pagePath, {waitUntil: ['networkidle0', 'domcontentloaded']});
-  await page.setContent( `<body>
- <h1>An example static HTML to PDF</h1>
- </body>`);
+  await page.setContent(html);
   await page.emulateMedia('print');
   const pdf = await page.pdf({
     format: 'A4',
